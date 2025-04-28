@@ -12,14 +12,14 @@ import android.os.IBinder
 import android.util.Log
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodChannel
 import org.json.JSONObject
 
 const val CHANNEL_ID = "service_notification"
 
-class AndroidLongTask(private val activity: FlutterActivity, private val binaryMessenger: BinaryMessenger) {
+class AndroidLongTask(private val activity: FlutterFragmentActivity, private val binaryMessenger: BinaryMessenger) {
   private val CHANNEL_NAME = "FSE_APP_CHANNEL_NAME"
   private val START_SERVICE = "START_SERVICE"
   private val STOP_SERVICE = "STOP_SERVICE"
